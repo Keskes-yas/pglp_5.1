@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class Personnel implements Serializable{
 	//Attributs
+	private int id;
 	private String nom;
 	private String prenom;
 	private LocalDate dateNaissance;
@@ -53,6 +54,16 @@ public class Personnel implements Serializable{
 	
 	public void create() {
 		
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	

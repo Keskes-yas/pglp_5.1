@@ -1,5 +1,6 @@
 package Prog.gl.DAOpattern;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Personnel implements Serializable{
@@ -7,7 +8,7 @@ public class Personnel implements Serializable{
 	private int id;
 	private String nom;
 	private String prenom;
-	private LocalDate dateNaissance;
+	private Date dateNaissance;
 	private String numeroTel;
 	private String fonction;
 	
@@ -15,7 +16,15 @@ public class Personnel implements Serializable{
 	public Personnel() {
 		
 	}
-	
+	public Personnel(int ID, String nom,String Prenom, Date naissance, String tel, String fonction)
+	{
+		this.id = ID ;
+		this.nom = nom ;
+		this.prenom = Prenom ;
+		this.dateNaissance = naissance ;
+		this.numeroTel = tel ;
+		this.fonction = fonction ;
+	}
 	
 	//Getters & setters
 	
@@ -31,10 +40,10 @@ public class Personnel implements Serializable{
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	public LocalDate getDateNaissance() {
+	public Date getDateNaissance() {
 		return dateNaissance;
 	}
-	public void setDateNaissance(LocalDate dateNaissance) {
+	public void setDateNaissance(Date dateNaissance) {
 		this.dateNaissance = dateNaissance;
 	}
 	public String getNumeroTel() {

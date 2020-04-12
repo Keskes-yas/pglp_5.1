@@ -15,7 +15,8 @@ public class PersonnelDAO extends DAO<Personnel> {
 		
 	}
 
-	
+
+
 	public boolean create(Personnel p) {
 		boolean bool = false ;
 		int res = 0 ;
@@ -86,7 +87,7 @@ public class PersonnelDAO extends DAO<Personnel> {
 	
 	public Personnel find(int id) {
 		Personnel per = null ;
-		boolean bool = false ;
+		
 		
 		PreparedStatement ps;
 		try {

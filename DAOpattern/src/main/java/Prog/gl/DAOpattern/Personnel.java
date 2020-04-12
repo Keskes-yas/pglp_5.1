@@ -1,7 +1,6 @@
 package Prog.gl.DAOpattern;
 
 import java.sql.Date;
-import java.time.LocalDate;
 
 public class Personnel implements Serializable{
 	//Attributs

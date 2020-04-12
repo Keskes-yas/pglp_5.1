@@ -1,5 +1,9 @@
 package Prog.gl.DAOpattern;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 /**
  * Hello world!
  *
@@ -7,7 +11,14 @@ package Prog.gl.DAOpattern;
 public class App 
 {
     public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    {		Connection C = null;
+	try {
+		C = DriverManager.getConnection("jdbc:mysql://localhost:8080","root", "root");
+	} catch (SQLException e) {
+    	
+		e.printStackTrace();
+	}
+    	DAO<Personnel> p = DAOFactory.getPersonnelDAO ( C ) ;
+    	System.out.println( "Hello World!" );
     }
 }

@@ -16,7 +16,9 @@ public class PersonnelDAO extends DAO<Personnel> {
 	}
 
 
-
+	/**
+	 * implementing create method
+	 */
 	public boolean create(Personnel p) {
 		boolean bool = false ;
 		int res = 0 ;
@@ -42,7 +44,9 @@ public class PersonnelDAO extends DAO<Personnel> {
 		return bool;
 	}
 
-	
+	/**
+	 * implement delete method for personnel 
+	 */
 	public boolean delete(Personnel p) {
 		boolean bool = false ; 
 		int res = 0 ;
@@ -64,7 +68,9 @@ public class PersonnelDAO extends DAO<Personnel> {
 		
 	}
 
-	
+	/**
+	 * implement update method for personnel
+	 */
 	public boolean update(Personnel p) {
 		boolean bool = false ;
 		int res = 0 ;
@@ -84,7 +90,9 @@ public class PersonnelDAO extends DAO<Personnel> {
 		return bool;
 	}
 
-	
+	/**
+	 * implement find method
+	 */
 	public Personnel find(int id) {
 		Personnel per = null ;
 		

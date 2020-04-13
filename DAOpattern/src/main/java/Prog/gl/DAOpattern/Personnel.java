@@ -15,6 +15,16 @@ public class Personnel implements Serializable{
 	public Personnel() {
 		
 	}
+	
+	/**
+	 * create an instance of Personnel
+	 * @param ID
+	 * @param nom
+	 * @param Prenom
+	 * @param naissance
+	 * @param tel
+	 * @param fonction
+	 */
 	public Personnel(int ID, String nom,String Prenom, Date naissance, String tel, String fonction)
 	{
 		this.id = ID ;

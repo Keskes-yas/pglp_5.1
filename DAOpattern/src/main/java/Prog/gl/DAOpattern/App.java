@@ -12,13 +12,13 @@ public class App
 {
     public static void main( String[] args )
     {		Connection C = null;
-	try {
+	/*try {
 		C = DriverManager.getConnection("jdbc:mysql://localhost","root", "root");
 	} catch (SQLException e) {
     	
 		e.printStackTrace();
 	}
-    	DAO<Personnel> p = DAOFactory.getPersonnelDAO ( C ) ;
+    	DAO<Personnel> p = DAOFactory.getPersonnelDAO ( C ) ;*/
     	System.out.println( "Hello World!" );
     }
 }

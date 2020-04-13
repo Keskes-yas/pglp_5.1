@@ -13,7 +13,7 @@ public class App
     public static void main( String[] args )
     {		Connection C = null;
 	try {
-		C = DriverManager.getConnection("jdbc:mysql://localhost:8080","root", "root");
+		C = DriverManager.getConnection("jdbc:mysql://localhost","root", "root");
 	} catch (SQLException e) {
     	
 		e.printStackTrace();
